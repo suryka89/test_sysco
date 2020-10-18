@@ -1,0 +1,29 @@
+{
+    "menus": [
+      {
+        "section": "Resources",
+        "items": [
+          {
+            "title": "Order",
+            "url": "\/user\/order",
+            "ico": "mdi mdi-code-string"
+          },
+          {
+            "title": "Products",
+            "url": "\/user\/products",
+            "ico": "mdi mdi-crop"
+          }
+        ]
+      },
+      {
+        "section": "Tools",
+        "items": [
+          {
+            "title": "Generator",
+            "url": "\/admin\/generator",
+            "ico": "mdi mdi-crop"
+          }
+        ]
+      }
+    ]
+  }

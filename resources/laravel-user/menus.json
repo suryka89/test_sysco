@@ -1,0 +1,19 @@
+{
+  "menus": [
+    {
+      "section": "Resources",
+      "items": [
+        {
+          "title": "Order",
+          "url": "\/user\/order",
+          "ico": "mdi mdi-code-string"
+        },
+        {
+          "title": "Products",
+          "url": "\/user\/products",
+          "ico": "mdi mdi-crop"
+        }
+      ]
+    }
+  ]
+}
