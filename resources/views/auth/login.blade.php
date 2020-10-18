@@ -12,24 +12,32 @@
                     @csrf
                     <div class="wrap-input100 validate-input">
                         <span class="label-input100">{{ __('Email Address') }}</span>
-                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                        @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                        <span class="focus-input100"></span>
-                    </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text"><span class="fa fa-envelope"></span></div>
+                            </div>
+                            <input id="email" type="email" value="admin@sysco.com" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        </div>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+				    </div>
                     <div class="wrap-input100 validate-input">
-                        <span class="label-input100">{{ __('Password') }}</span>
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                        @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                        <span class="focus-input100 password"></span>
-                    </div>
+					<span class="label-input100">{{ __('Password') }}</span>
+					<div class="input-group">
+						<div class="input-group-prepend">
+						<div class="input-group-text"><span class="fa fa-lock"></span></div>
+						</div>
+						<input type="password" value="123456789" class="form-control validatePass @error('password') is-invalid @enderror" name="password" id="password" required autocomplete="current-password">
+					</div>
+					@error('password')
+						<span class="invalid-feedback" role="alert">
+							<strong>{{ $message }}</strong>
+						</span>
+					@enderror
+				</div>
                     <div class="text-right p-t-8 p-b-31">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
