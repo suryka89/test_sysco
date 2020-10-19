@@ -26,7 +26,7 @@
   <style>
     #sortable1, #sortable2, #sortable3, #sortable4 {
     border: 1px solid #eee;
-    width: 142px;
+    width: 200px;
     min-height: 20px;
     list-style-type: none;
     margin: 0;
@@ -38,9 +38,10 @@
   }
   #sortable1, #sortable2, #sortable3, #sortable4 li {
     margin: 0 5px 5px 5px;
-    /* padding: 5px; */
+    padding: 5px;
     font-size: 1.2em;
     /* width: 120px; */
+    width: 200px;
   }
         .content-message{
             position: fixed;
