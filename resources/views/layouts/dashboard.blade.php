@@ -26,7 +26,7 @@
   <style>
     #sortable1, #sortable2, #sortable3, #sortable4 {
     border: 1px solid #eee;
-    width: 200px;
+    /* width: 200px; */
     min-height: 20px;
     list-style-type: none;
     margin: 0;
