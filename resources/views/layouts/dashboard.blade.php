@@ -36,12 +36,14 @@
     min-height: 500px;
     height: auto;
   }
+  
   #sortable1, #sortable2, #sortable3, #sortable4 li {
     margin: 0 5px 5px 5px;
     padding: 5px;
     font-size: 1.2em;
     /* width: 120px; */
-    width: 200px;
+    width: auto;
+    min-width: 142px;
   }
         .content-message{
             position: fixed;
