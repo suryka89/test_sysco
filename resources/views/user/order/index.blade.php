@@ -34,7 +34,7 @@
                             </table> -->
                             <div class="row">
                                 <div class="col-md-3" style="text-align: center;">
-                                    <label>COLA</label>
+                                    <label>COLA</label><br>
                                     <ul id="sortable1" data-state="pending" class="connectedSortable">
                                     @foreach($orders as $item)
                                     @if($item['state'] == 'pending')
@@ -59,7 +59,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-3" style="text-align: center;">
-                                    <label>PREPARACIÓN</label>
+                                    <label>PREPARACIÓN</label><br>
                                     <ul id="sortable2" data-state="preparation" class="connectedSortable">
                                     @foreach($orders as $item)
                                     @if($item['state'] == 'preparation')
@@ -84,7 +84,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-3" style="text-align: center;">
-                                    <label>FINALIZADO</label>
+                                    <label>FINALIZADO</label><br>
                                     <ul id="sortable3" data-state="complete" class="connectedSortable">
                                     @foreach($orders as $item)
                                     @if($item['state'] == 'complete')
@@ -109,7 +109,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-3" style="text-align: center;">
-                                    <label>ENTREGADO</label>
+                                    <label>ENTREGADO</label><br>
                                     <ul id="sortable4" data-state="delivered" class="connectedSortable">
                                     @foreach($orders as $item)
                                     @if($item['state'] == 'delivered')
