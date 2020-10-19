@@ -275,6 +275,7 @@
               <th scope="col" class="text-center">{{ __('Add') }}</th>
               <th scope="col">{{ __('Product name') }}</th>
               <th scope="col">{{ __('Image') }}</th>
+              <th scope="col">{{ __('Price') }}</th>
               <th scope="col">{{ __('Qty') }}</th>
             </tr>
           </thead>
@@ -282,6 +283,14 @@
 
           </tbody>
         </table>
+        <div class="row" >
+            <div class="col-md-6">
+            <label>Total:</label>
+            </div>
+            <div class="col-md-6">
+            <label id="total"></label>
+            </div>
+        </div>
       </div>
         </div>
         <div class="modal-footer  modal-footer">

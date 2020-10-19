@@ -314,6 +314,19 @@ function changeState(value,id)
     });
 }
 
+function calcularTotal()
+{
+    var price=0,total=0, qty=0;
+    $("[name='price']").each(function(index){
+        price = $(this).val();
+        qty = $("[name='qty["+index+"]']").val();
+        console.log(price);
+        total += price*qty;
+        $("#total").empty();
+        $("#total").append("₡"+total);
+    });
+}
+
 
 
 

@@ -30,7 +30,7 @@ class OrderController extends Controller
             'json_producs' => 'required',
         ]);
         $requestData = $request->all();
-        $requestData["items"] = json_decode(json_encode($requestData["json_producs"]),true);
+        $requestData["items"] = json_decode($requestData["json_producs"],true);
         unset($requestData['_token']);
         unset($requestData['json_producs']);
         $api = new CoffeeshopApi();
@@ -74,7 +74,8 @@ class OrderController extends Controller
                         '</td>'.
                         '<td>'.$item['name'].'</td>'.
                         '<td><img  src="'.$item['image'].'" alt="'.$item['name'].' width="100" height="100""></td>'.
-                        '<td><input type="text" class="form-control" name="qty['.$count.']"></td>'.
+                        '<td><input type="text" style="display:none" value="'.$item['price'].'" name="price"><p>'.$item['price'].'</p></td>'.
+                        '<td><input type="number" onkeyup="calcularTotal()" class="form-control" name="qty['.$count.']"></td>'.
                       '</tr>';
             $count++;
         }
