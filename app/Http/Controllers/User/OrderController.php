@@ -30,7 +30,7 @@ class OrderController extends Controller
             'json_producs' => 'required',
         ]);
         $requestData = $request->all();
-        $requestData["items"] = $requestData["json_producs"];
+        $requestData["items"] = json_decode(json_encode($requestData["json_producs"]),true);
         unset($requestData['_token']);
         unset($requestData['json_producs']);
         $api = new CoffeeshopApi();
