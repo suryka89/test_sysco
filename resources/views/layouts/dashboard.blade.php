@@ -159,16 +159,7 @@
 
             <li class="nav-item dropdown mr-2">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                <img  src='<?php 
-                              if( \Storage::disk('public')->exists(\Auth::user()->avatar)  ){ 
-                                  echo \Storage::url(\Auth::user()->avatar);
-                              }else if(\Auth::user()->social_type != null)
-                              {
-                                  echo \Auth::user()->avatar;
-                              } else {
-                                  echo (\Storage::url("images/user/default.jpg"));
-                              } 
-                ?>' alt="profile" style="
+                <img  src='https://iupac.org/wp-content/uploads/2018/05/default-avatar-300x300.png' alt="profile" style="
                                       max-width: 71px;
                                       max-height: 48px;
                                       border-radius: 103px;
