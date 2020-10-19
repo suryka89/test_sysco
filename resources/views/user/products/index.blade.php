@@ -9,16 +9,7 @@
                             <i class="fa fa-plus" aria-hidden="true"></i> {{__('Add New')}}
                         </a>
 
-                        {!! Form::open(['method' => 'GET', 'url' => '/user/products', 'class' => 'form-inline my-2 my-lg-0 float-right', 'role' => 'search'])  !!}
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="search" placeholder="{{__('Search')}}..." value="{{ request('search') }}">
-                            <span class="input-group-append">
-                                <button class="btn btn-secondary" type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                        </div>
-                        {!! Form::close() !!}
+
 
                         <br/>
                         <br/>
