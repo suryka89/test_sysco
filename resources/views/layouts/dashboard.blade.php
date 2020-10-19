@@ -33,7 +33,8 @@
     padding: 5px 0 0 0;
     float: left;
     margin-right: 10px;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
   }
   #sortable1, #sortable2, #sortable3, #sortable4 li {
     margin: 0 5px 5px 5px;
