@@ -75,7 +75,7 @@ class OrderController extends Controller
                         '<td>'.$item['name'].'</td>'.
                         '<td><img  src="'.$item['image'].'" alt="'.$item['name'].' width="100" height="100""></td>'.
                         '<td><input type="text" style="display:none" value="'.$item['price'].'" name="price"><p>'.$item['price'].'</p></td>'.
-                        '<td><input type="number" onkeyup="calcularTotal()" class="form-control" name="qty['.$count.']"></td>'.
+                        '<td><input type="number" onchange="calcularTotal()" onkeyup="calcularTotal()" class="form-control" name="qty['.$count.']"></td>'.
                       '</tr>';
             $count++;
         }
